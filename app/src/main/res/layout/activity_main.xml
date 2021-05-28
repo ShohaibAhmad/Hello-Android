@@ -4,37 +4,258 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blure"
+    android:background="@drawable/image_4"
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/white"
+        android:background="@drawable/button"
+        android:weightSum="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_4"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
         android:weightSum="90">
 
-        <Button
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:layout_weight="30"
-            android:text="Buttob-1" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:text="Buttob-2" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/like"
+                app:tint="@color/white"
 
-        <Button
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:layout_weight="30"
-            android:text="Buttob-3" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/like"
+                app:tint="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/like"
+                app:tint="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="90">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/like"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/like"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/like"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/wh"
+            android:text="Button-1"
+            android:textColor="#F8F8F8"
+            app:backgroundTint="@color/wh" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/wh"
+            android:text="Button-1"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/wh" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/wh"
+            android:text="Button-1"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/wh" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/wh"
+            android:text="Button-4"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/wh" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/wh"
+            android:text="Button-4"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/wh" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/wh"
+            android:text="Button-4"
+            android:textColor="#F8F8F8"
+            app:backgroundTint="@color/wh" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </LinearLayout>
