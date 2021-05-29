@@ -4,258 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_4"
+    android:background="#BBDEFB"
     android:orientation="vertical"
-    android:padding="15dp"
     tools:context=".MainActivity">
-
-
-    <LinearLayout
+<!--        Start ScrollView From her-->
+    <ScrollView
         android:layout_width="match_parent"
-        android:background="@drawable/button"
-        android:weightSum="3"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_height="100dp">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+<!--        Start LinearLayout from her-->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/image_4"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:weightSum="90">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_weight="30"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/like"
-                app:tint="@color/white"
-
-                />
-
+<!--            Start Title from her-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textColor="@color/white" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_weight="30"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/like"
-                app:tint="@color/white"
-
-                />
-
+                android:layout_width="match_parent"
+                android:text="Beauty of Bangladesh"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+<!--            Title end her-->
+<!--            Beauty of Bangladesh image start from her-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/cover"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+<!--            Beauty of Bangladesh image end from her-->
+<!--            Short description start her-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_weight="30"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/like"
-                app:tint="@color/white"
-
-                />
-
+                android:layout_width="match_parent"
+                android:text="Beauty of Bangladesh"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+<!--            Short description end her-->
+            <!--            Long description start her-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:weightSum="90">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:gravity="center"
-            android:orientation="vertical">
-
+                android:layout_width="match_parent"
+                android:text="Bangladesh has a land of enormous beauty, hundreds of serpentine rivers, crystal clear water lakes surrounded by ever green hills, luxuriant tropical rain forests, beautiful cascades of green tea gardens, world's largest mangrove forest preserved as World Heritage, home of the Royal Bengal Tiger and the wild lives"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+            <!--            Long description end her-->
+            <!--            Beauty of Bangladesh image start from her-->
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/like"
-                app:tint="@color/white" />
-
+                android:layout_width="match_parent"
+                android:src="@drawable/cover"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+            <!--            Beauty of Bangladesh image end from her-->
+            <!--            Short description start her-->
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textColor="#FFFFFF" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/like"
-                app:tint="@color/white" />
-
+                android:layout_width="match_parent"
+                android:text="Beauty of Bangladesh"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+            <!--            Short description end her-->
+            <!--            Long description start her-->
             <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textColor="#FFFFFF" />
+                android:layout_width="match_parent"
+                android:text="Bangladesh has a land of enormous beauty, hundreds of serpentine rivers, crystal clear water lakes surrounded by ever green hills, luxuriant tropical rain forests, beautiful cascades of green tea gardens, world's largest mangrove forest preserved as World Heritage, home of the Royal Bengal Tiger and the wild lives"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+            <!--            Long description end her-->
+<!--             Start 3 button from her -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="100dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Like"
+                    app:backgroundTint="@color/wh" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Comment"
+                    app:backgroundTint="@color/wh" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Share"
+                    app:backgroundTint="@color/wh" />
+
+            </LinearLayout>
+<!--            End LinearLayout-->
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/like"
-                app:tint="@color/white" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textColor="#FFFFFF" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:weightSum="3"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/wh"
-            android:text="Button-1"
-            android:textColor="#F8F8F8"
-            app:backgroundTint="@color/wh" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/wh"
-            android:text="Button-1"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="@color/wh" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/wh"
-            android:text="Button-1"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="@color/wh" />
-
-    </LinearLayout>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:weightSum="3">
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/wh"
-            android:text="Button-4"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="@color/wh" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/wh"
-            android:text="Button-4"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="@color/wh" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/wh"
-            android:text="Button-4"
-            android:textColor="#F8F8F8"
-            app:backgroundTint="@color/wh" />
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-
+<!--        End ScrollView -->
+    </ScrollView>
 </LinearLayout>
